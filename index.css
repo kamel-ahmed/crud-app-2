@@ -1,0 +1,189 @@
+*{
+    font-family:  sans-serif;
+    font-size: 18px;
+}
+.mode{
+    margin-bottom:2%;
+
+}
+    /* mode buttons */
+#lightMode , #darkMode{
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: white;
+}
+
+#lightMode{
+    background-color:yellow
+}
+
+/* Add Product Form */
+.container form{
+    width: 98%;
+    padding-left:2% ;
+    
+}
+.container form label {
+    width: 99%;
+    display: block;
+    margin-bottom: 5px;
+
+}
+.container form input , .container form textarea{
+    width: 95%;
+    margin-bottom: 20px;
+    padding:5px;
+    border:2px solid lightgrey;
+    border-radius: 5px;
+}
+form input:focus{
+    border:3px 
+    
+}
+.container form textarea{
+    height:80px
+}
+
+/* Main Add and Edit Product buttons */
+#addProduct , #editProduct {
+    font-size: larger;
+    margin:auto;
+    margin-top: 10px;
+    text-align: center;
+    background-color: steelblue;
+    border-radius: 10px;
+    padding:10px;
+    cursor: pointer;
+
+}
+#addProduct{
+    display: block;
+}
+
+#editProduct{
+    background-color: green;
+    left: 0.9%;
+    display: none;
+}
+
+/* End Form */
+
+
+
+
+#warning{
+    display:none;
+    width: 95%;
+    /* margin: auto; */
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: large;
+}
+
+
+/* search */
+
+.search{
+    /* background-color: red; */
+    width: 50%;
+    height: 25px;
+    text-align: center;
+    margin: 20px auto;
+}
+.search label{
+    width: 20%;
+    /* display: inline-block; */
+    /* background-color: green; */
+    /* width: 10%; */
+    margin-right: 2%;
+    padding-bottom:-20px;
+    
+}
+.search input{
+    padding-left: 10px;
+    width: 70%;
+    height: 1.5rem;
+    border: 1px solid black;
+    border-radius:8px;
+}
+
+
+/* Display Products */
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+/* product Card */
+.product{
+    width: 20%;
+    padding: 10px;
+    border:2px solid black;
+    border-radius:10px;
+    margin: 15px 0 15px 0;
+    overflow:auto;
+}
+
+.ubdateBtn , .deleteBtn{
+    padding:8px;
+    background-color: green ;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.deleteBtn{
+    background-color: red;
+    
+}
+
+
+
+
+
+
+
+
+
+#goUp{
+    padding:15px 15px 0 15px;
+    display: none;
+    background-color:gray;
+    border: none;
+    border-radius: 50%;
+    font-size: 60px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    right: 10px;
+    top: 80vh;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (min-width: 0) and (max-width:700px) {
+    .product{
+        width: 90%;
+    }
+    
+}
+@media  (min-width: 701px) and (max-width:1100px) {
+    .product{
+        width: 45%;
+    }
+    
+}

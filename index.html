@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROUD App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="mode">
+
+            <button id="lightMode" isActive="true" onclick=lightMode()> <img src="./icons/light.png" alt="light mode" width="50px" , height="2%"/></button>
+            <button id="darkMode" isActive="false" onclick=darkMode() ><img src="./icons/dark.png" alt="light mode" width="50px" , height="2%"/></button>
+            
+        </div>
+
+
+        <!-- add product -->
+        <form >
+
+            <label for="name"> Product Name</label>
+            <input id="name" type="text"  required >
+            
+            <label for="price"> Product price</label>
+            <input id="price" type="number"  required>
+            
+            <label for="description"> Product description</label>
+            <textarea id="description" name="description"  required></textarea>
+            
+            <p id="warning"></p>
+
+            <button id="addProduct" type="button">Add Product</button>
+            <button id="editProduct" type="button" onclick="submitEdit()">Edit Product</button>
+        </form>
+
+        <div class="search">
+            <label for="search">search</label>
+            <input type="text" id="search" onkeyup="serchForProduct()">
+        </div>
+
+
+
+        <!-- products -->
+        <button id="goUp" onclick="goUp()">^</button>
+        <div class="products">
+
+            
+
+        </div>
+        
+        
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
